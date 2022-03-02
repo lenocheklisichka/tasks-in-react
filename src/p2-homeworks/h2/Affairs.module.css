@@ -1,0 +1,44 @@
+.affair {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.boxAffair {
+    margin-left: 30px;
+}
+
+.affairItem {
+    width: 150px;
+    color: green;
+}
+
+.priority {
+    color: green;
+}
+
+.buttonAffair {
+    width: 100px;
+    margin-left: 90px;
+    color: chartreuse;
+    background-color: green;
+    border-top-color: chartreuse;
+    border-left-color: chartreuse;
+}
+
+.button {
+    width: 70px;
+    color: chartreuse;
+    background-color: darkgreen;
+    border-top-color: chartreuse;
+    border-left-color: chartreuse;
+    margin-right: 30px;
+}
+
+.button:focus {
+    outline: chartreuse 1px solid;
+}
+
+.button:active {
+    background-color: darkolivegreen;
+}
+
