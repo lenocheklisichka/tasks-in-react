@@ -14,6 +14,7 @@ function HW1() {
     return (
         <div>
             <hr/>
+            <hr/>
             homeworks 1
             <Message
                 avatar={messageData.avatar}
