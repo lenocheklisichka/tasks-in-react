@@ -1,7 +1,9 @@
 .checkbox {
-
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
 }
 
 .spanClassName {
-
+    font-size: 18px;
 }

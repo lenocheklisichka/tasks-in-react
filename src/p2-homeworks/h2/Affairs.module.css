@@ -1,37 +1,62 @@
 .affair {
     display: flex;
+    justify-content: space-between;
+    width: 50%;
     margin-bottom: 30px;
 }
 
 .boxAffair {
-    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxButton {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
 }
 
 .affairItem {
-    width: 150px;
+    width: 100px;
     color: green;
+    font-size: 18px;
 }
 
 .priority {
     color: green;
+    font-size: 18px;
 }
 
 .buttonAffair {
     width: 100px;
-    margin-left: 90px;
-    color: chartreuse;
-    background-color: green;
-    border-top-color: chartreuse;
-    border-left-color: chartreuse;
+    background: linear-gradient(135deg, #F5CE62, #E43603, #E85A19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.buttonAffair:hover {
+    background: linear-gradient(135deg,#E85A19, #E43603, #F5CE62 );
+    cursor: pointer;
 }
 
 .button {
-    width: 70px;
-    color: chartreuse;
-    background-color: darkgreen;
-    border-top-color: chartreuse;
-    border-left-color: chartreuse;
-    margin-right: 30px;
+    background: linear-gradient(135deg, #40E495, #30DD8A, #2BB673);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    font-size: 15px;
+}
+
+.button:hover {
+    background: linear-gradient(135deg,#0BA360,#30DD8A,#2BB673);
 }
 
 .button:focus {

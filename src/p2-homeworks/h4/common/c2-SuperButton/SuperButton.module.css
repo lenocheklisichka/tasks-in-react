@@ -1,7 +1,40 @@
-.default {
+.button.default {
+    background-color: green;
+}
 
+.button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 5px;
+    width: 100px;
+    font-size: 15px;
+}
+
+.button.default:hover {
+    background: linear-gradient(135deg, #40E495, #30DD8A, #2BB673);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: lightgreen;
 }
 
 .red {
-    background: red;
+    width: 100px;
+    background: linear-gradient(135deg, #F5CE62, #E43603, #E85A19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.red:hover {
+    background: linear-gradient(135deg, #E85A19, #E43603, #F5CE62);
 }

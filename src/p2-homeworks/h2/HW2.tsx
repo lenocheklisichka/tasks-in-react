@@ -45,8 +45,6 @@ function HW2() {
         <div>
             <hr/>
             homeworks 2
-
-            {/*should work (должно работать)*/}
             <Affairs
                 data={filteredAffairs}
                 setFilter={setFilter}
@@ -54,8 +52,6 @@ function HW2() {
             />
 
             <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeAffairs/>*/}
             <hr/>
         </div>
     )

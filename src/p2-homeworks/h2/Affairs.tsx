@@ -5,7 +5,7 @@ import classes from "./Affairs.module.css";
 
 type AffairsPropsType = {
     data: Array<AffairType>
-    setFilter: (filter: FilterType ) => void
+    setFilter: (filter: FilterType) => void
     deleteAffairCallback: (_id: number) => void
 }
 
@@ -18,18 +18,28 @@ function Affairs(props: AffairsPropsType) {
         />
     ))
 
-    const setAll = () => {props.setFilter("all")} // need to fix
-    const setHigh = () => {props.setFilter("high")}
-    const setMiddle = () => {props.setFilter("middle")}
-    const setLow = () => {props.setFilter("low")}
+    const setAll = () => {
+        props.setFilter("all")
+    }
+    const setHigh = () => {
+        props.setFilter("high")
+    }
+    const setMiddle = () => {
+        props.setFilter("middle")
+    }
+    const setLow = () => {
+        props.setFilter("low")
+    }
 
     return (
         <div className={classes.boxAffair}>
             {mappedAffairs}
-            <button className={`${classes.button} ${classes.active}`} onClick={setAll}>All</button>
-            <button className={`${classes.button} ${classes.active}`} onClick={setHigh}>High</button>
-            <button className={`${classes.button} ${classes.active}`} onClick={setMiddle}>Middle</button>
-            <button className={`${classes.button} ${classes.active}`} onClick={setLow}>Low</button>
+            <div className={classes.boxButton}>
+                <button className={`${classes.button} ${classes.active}`} onClick={setAll}>All</button>
+                <button className={`${classes.button} ${classes.active}`} onClick={setHigh}>High</button>
+                <button className={`${classes.button} ${classes.active}`} onClick={setMiddle}>Middle</button>
+                <button className={`${classes.button} ${classes.active}`} onClick={setLow}>Low</button>
+            </div>
         </div>
     )
 }
