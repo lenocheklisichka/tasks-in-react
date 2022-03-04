@@ -21,6 +21,7 @@
     border-radius: 50%;
     background-color: lightgreen;
     color: green;
+    margin-left: 20px;
     text-align: center;
 }
 
@@ -38,11 +39,20 @@
     display: flex;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    /*transition-duration: 400ms;*/
-    /*transform: translate(-250px);*/
+    background-color: lemonchiffon;
 }
 
-.open {
-    display: block;
-    padding: 10px;
+.pageError {
+    font-size: 30px;
+    text-align: center;
+}
+
+.error404 {
+    font-size: 100px;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.errorImg {
+    text-align: center;
 }
