@@ -3,6 +3,7 @@ import Header from './Header'
 import Router from './Router'
 import {HashRouter} from "react-router-dom";
 import Junior from './pages/Junior';
+import HW11 from '../h11/HW11';
 
 function HW5() {
     return (
@@ -10,7 +11,6 @@ function HW5() {
             <HashRouter>
                 <Header/>
                 <Router/>
-                <Junior/>
             </HashRouter>
         </div>
     )
