@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Router from './Router'
 import {HashRouter} from "react-router-dom";
-import PreJunior from "./pages/PreJunior";
+import Junior from './pages/Junior';
 
 function HW5() {
     return (
@@ -10,6 +10,7 @@ function HW5() {
             <HashRouter>
                 <Header/>
                 <Router/>
+                <Junior/>
             </HashRouter>
         </div>
     )
