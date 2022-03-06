@@ -10,7 +10,6 @@ function HW5() {
             <HashRouter>
                 <Header/>
                 <Router/>
-                <PreJunior/>
             </HashRouter>
         </div>
     )

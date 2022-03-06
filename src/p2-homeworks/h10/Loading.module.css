@@ -1,0 +1,26 @@
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.isLoading {
+    width: 65px;
+    height: 65px;
+}
+
+.circle1 {
+    stroke: #ABB7E0;
+    fill: none;
+    stroke-width: 15;
+    stroke-dasharray: 3 10.08;
+}
+
+.circle2 {
+    stroke: #ffffff;
+    fill: none;
+    stroke-width: 15;
+    stroke-dasharray: 3 154;
+    stroke-dashoffset: 15;
+}

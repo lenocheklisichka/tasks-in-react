@@ -16,7 +16,8 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
 
     return (
         <>
-            DoubleRange
+            <SuperDoubleRange/>
+           <input type={"doubleRange"}/>
         </>
     )
 }
