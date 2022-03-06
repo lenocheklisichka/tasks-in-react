@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/tasks-in-react/static/css/main.25ddda3c.chunk.css",
-    "main.js": "/tasks-in-react/static/js/main.85e8efad.chunk.js",
-    "main.js.map": "/tasks-in-react/static/js/main.85e8efad.chunk.js.map",
+    "main.css": "/tasks-in-react/static/css/main.fe5da0e6.chunk.css",
+    "main.js": "/tasks-in-react/static/js/main.5fe58af6.chunk.js",
+    "main.js.map": "/tasks-in-react/static/js/main.5fe58af6.chunk.js.map",
     "runtime-main.js": "/tasks-in-react/static/js/runtime-main.a7e12bb0.js",
     "runtime-main.js.map": "/tasks-in-react/static/js/runtime-main.a7e12bb0.js.map",
-    "static/js/2.0f7df6e0.chunk.js": "/tasks-in-react/static/js/2.0f7df6e0.chunk.js",
-    "static/js/2.0f7df6e0.chunk.js.map": "/tasks-in-react/static/js/2.0f7df6e0.chunk.js.map",
+    "static/js/2.17f36abd.chunk.js": "/tasks-in-react/static/js/2.17f36abd.chunk.js",
+    "static/js/2.17f36abd.chunk.js.map": "/tasks-in-react/static/js/2.17f36abd.chunk.js.map",
     "index.html": "/tasks-in-react/index.html",
-    "static/css/main.25ddda3c.chunk.css.map": "/tasks-in-react/static/css/main.25ddda3c.chunk.css.map",
-    "static/js/2.0f7df6e0.chunk.js.LICENSE.txt": "/tasks-in-react/static/js/2.0f7df6e0.chunk.js.LICENSE.txt"
+    "static/css/main.fe5da0e6.chunk.css.map": "/tasks-in-react/static/css/main.fe5da0e6.chunk.css.map",
+    "static/js/2.17f36abd.chunk.js.LICENSE.txt": "/tasks-in-react/static/js/2.17f36abd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a7e12bb0.js",
-    "static/js/2.0f7df6e0.chunk.js",
-    "static/css/main.25ddda3c.chunk.css",
-    "static/js/main.85e8efad.chunk.js"
+    "static/js/2.17f36abd.chunk.js",
+    "static/css/main.fe5da0e6.chunk.css",
+    "static/js/main.5fe58af6.chunk.js"
   ]
 }
