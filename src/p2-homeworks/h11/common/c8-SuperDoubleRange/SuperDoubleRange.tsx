@@ -1,22 +1,34 @@
-import React from 'react'
+import React, {ChangeEvent} from 'react'
+import s from './SuperDoubleRange.module.css'
 
 type SuperDoubleRangePropsType = {
     onChangeRange?: (value: [number, number]) => void
-    value?: [number, number]
-    // min, max, step, disable, ...
+    value?: number
+    onChange?: (e: ChangeEvent<HTMLInputElement>) => void
+    min: number
+    max: number
 }
 
 const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
-    {
-        onChangeRange, value,
-        // min, max, step, disable, ...
+    {onChangeRange, onChange, value, min, max, ...restProps}) => {
+
+    const onChangeDoubleRange = (e: ChangeEvent<HTMLInputElement>) => {
+        onChange && onChange(e)
+        onChangeRange && onChangeRange([30, 70])
     }
-) => {
-    // сделать самому, можно подключать библиотеки
 
     return (
         <>
-            DoubleRange
+            <div>
+                <input min={0}
+                       max={100}
+                       value={value}
+                       type={'range'}
+                       onChange={onChangeDoubleRange}
+                       className={s.inputDoubleRange}
+                       {...restProps}
+                />
+            </div>
         </>
     )
 }
