@@ -3,7 +3,7 @@
 }
 
 .dark-text {
-    color: aliceblue;
+    color: blue;
 }
 
 .red {
@@ -20,4 +20,8 @@
 
 .some-text {
     color: darkslateblue;
+}
+
+.dropDownList {
+    margin: 30px 0 70px 100px;
 }

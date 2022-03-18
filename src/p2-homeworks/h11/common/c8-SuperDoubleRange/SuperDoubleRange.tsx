@@ -12,6 +12,8 @@ type SuperDoubleRangePropsType = {
 const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     {onChangeRange, onChange, value, min, max, ...restProps}) => {
 
+
+
     const onChangeDoubleRange = (e: ChangeEvent<HTMLInputElement>) => {
         onChange && onChange(e)
         onChangeRange && onChangeRange([30, 70])
@@ -25,7 +27,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
                        value={value}
                        type={'range'}
                        onChange={onChangeDoubleRange}
-                       className={s.inputDoubleRange}
+                       className={s.inputDoubleRange1}
                        {...restProps}
                 />
             </div>

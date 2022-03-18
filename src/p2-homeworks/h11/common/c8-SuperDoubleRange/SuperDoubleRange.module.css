@@ -1,4 +1,14 @@
-.inputDoubleRange {
+
+.inputDoubleRange1 {
     width: 500px;
     cursor: pointer;
+    position: relative;
 }
+
+.inputDoubleRange2 {
+    cursor: pointer;
+    position: absolute;
+    left: 27.5%;
+    z-index: 1;
+}
+
