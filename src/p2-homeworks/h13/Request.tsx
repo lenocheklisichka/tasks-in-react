@@ -24,7 +24,7 @@ function Request() {
 
     return (
         <div>
-            <Button color={'primary'} onClick={onClickCallback}>submit</Button>
+            <Button variant="contained" color="secondary" onClick={onClickCallback}>request</Button>
             <Checkbox color="primary" checked={checked}/>
         </div>
     )
