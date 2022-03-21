@@ -19,7 +19,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
 
     return (
         <select onChange={onChangeCallback} {...restProps}
-                style={{width: '300px', textAlign: 'center', padding: '5px', borderRadius: '5px'}}>
+                style={{width: '300px', padding: '5px', borderRadius: '5px'}}>
             {mappedOptions}
         </select>
     )

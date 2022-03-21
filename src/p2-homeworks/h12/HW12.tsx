@@ -5,7 +5,7 @@ import {changeThemeC} from "./bll/themeReducer";
 import s from "./HW12.module.css";
 import SuperSelect from "./SuperSelect";
 
-const themes = ['dark', 'red', 'some'];
+const themes = ['orange', 'dark', 'red', 'green', 'blue', 'turquoise'];
 
 function HW12() {
     const theme = useSelector<AppStoreType>(state => state.theme.theme)
@@ -16,14 +16,14 @@ function HW12() {
     }
 
     return (
-        <div className={s[theme + s.App]}>
+        <div className={s[theme + '-scheme']}>
             <hr/>
             <span className={s[theme + '-text']}>
                 homeworks 12
             </span>
             <div className={s.dropDownList}>
                 <SuperSelect
-                    options={themes }
+                    options={themes}
                     onChangeOption={onChangeCallback}
                 />
             </div>

@@ -1,12 +1,12 @@
-.dark {
+.dark-scheme {
     background: dimgrey;
 }
 
 .dark-text {
-    color: blue;
+    color: white;
 }
 
-.red {
+.red-scheme {
     background: lightcoral;
 }
 
@@ -14,12 +14,36 @@
     color: aqua;
 }
 
-.some {
+.green-scheme {
     background: lightgreen;
 }
 
-.some-text {
+.green-text {
     color: darkslateblue;
+}
+
+.blue-scheme {
+    background: blue;
+}
+
+.blue-text {
+    color: white;
+}
+
+.orange-scheme {
+    background: orange;
+}
+
+.orange-text {
+    color: darkmagenta;
+}
+
+.turquoise-scheme {
+    background: turquoise;
+}
+
+.turquoise-text {
+    color: cornflowerblue;
 }
 
 .dropDownList {
