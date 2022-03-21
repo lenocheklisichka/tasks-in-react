@@ -1,12 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Button from '@material-ui/core/Button';
 import Checkbox from '@material-ui/core/Checkbox';
 import {requestApi} from './api/request-api';
 
 function Request() {
     const [checked, setChecked] = useState(false)
+    const [error, setError] = useState(false)
 
-    useEffect(() => {
+    const onClickCallback = () => {
+        setChecked(true)
         const success = false
         requestApi.createRequest(success)
             .then((res) => {
@@ -14,18 +16,15 @@ function Request() {
             })
             .catch((error) => {
                 console.log({...error});
-                console.log(error.response ? error.response.data.errorText : error.message);
+                setError(error.response ? error.response.data.errorText : error.message);
             })
-    }, [])
-
-    const onClickCallback = () => {
-        setChecked(true)
     }
 
     return (
         <div>
             <Button variant="contained" color="secondary" onClick={onClickCallback}>request</Button>
             <Checkbox color="primary" checked={checked}/>
+            <div>{error}</div>
         </div>
     )
 }
