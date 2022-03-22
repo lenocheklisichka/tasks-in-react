@@ -1,38 +1,35 @@
-import React, {ChangeEvent} from 'react'
+import Box from '@material-ui/core/Box';
+import Slider from '@material-ui/core/Slider/Slider';
+import React, {ChangeEvent, useState} from 'react'
 import s from './SuperDoubleRange.module.css'
 
 type SuperDoubleRangePropsType = {
     onChangeRange?: (value: [number, number]) => void
-    value?: number
-    onChange?: (e: ChangeEvent<HTMLInputElement>) => void
+    value?: [number, number]
     min: number
     max: number
 }
 
 const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
-    {onChangeRange, onChange, value, min, max, ...restProps}) => {
+    {onChangeRange, value, min, max, ...restProps}) => {
 
-
-
-    const onChangeDoubleRange = (e: ChangeEvent<HTMLInputElement>) => {
-        onChange && onChange(e)
+    const handleChangeDoubleRange = (event: any, newValue: any) => {
         onChangeRange && onChangeRange([30, 70])
     }
 
     return (
-        <>
-            <div>
-                <input min={0}
-                       max={100}
-                       value={value}
-                       type={'range'}
-                       onChange={onChangeDoubleRange}
-                       className={s.inputDoubleRange1}
-                       {...restProps}
-                />
-            </div>
-        </>
-    )
+        <Box sx={{width: 500}}>
+            <Slider
+                min={0}
+                max={100}
+                getAriaLabel={() => 'Temperature range'}
+                value={value}
+                onChange={handleChangeDoubleRange}
+                valueLabelDisplay="auto"
+                {...restProps}
+            />
+        </Box>
+    );
 }
 
 export default SuperDoubleRange
